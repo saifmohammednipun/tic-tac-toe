@@ -42,7 +42,7 @@ import java.util.Scanner;
 
         }
 
-        /** gameStatus determines the status of the game (win, draw, or continue) */
+        /* gameStatus determines the status of the game (win, draw, or continue) */
         public static int gameStatus(String[][] m, String e) {
             if (isWin(m, e))
                 return 0; // Win
@@ -52,13 +52,13 @@ import java.util.Scanner;
                 return 2; // Continue
         }
 
-        /** isWin returns true if player has placed three tokens in,
+        /* isWin returns true if player has placed three tokens in,
          a horizontal vertical, or diagonal row on the grid */
         public static boolean isWin(String[][] m, String t) {
             return isHorizontalWin(m, t) || isVerticalWin(m, t) || isDiagonalWin(m, t);
         }
 
-        /** isHorizontalWin returns true if player has
+        /* isHorizontalWin returns true if player has
          placed three tokens in a horizontal row */
         public static boolean isHorizontalWin(String[][] m, String t) {
             for (int i = 0; i < m.length; i++) {
